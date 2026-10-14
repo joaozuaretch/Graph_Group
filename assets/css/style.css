@@ -216,7 +216,33 @@ footer {
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
   .nav { flex-direction: column; height: auto; padding: 12px 0; }
-  .nav ul a { padding: 6px 10px; font-size: 0.95rem; }
+  .nav ul { flex-wrap: wrap; justify-content: center; }
+  .nav ul a { padding: 6px 8px; font-size: 0.9rem; }
   .hero { padding: 48px 24px; }
   main { padding-top: 32px; }
 }
+
+/* ---------- Pontes de Königsberg ---------- */
+.bridges {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.bridges-fig { padding: 16px; }
+.bridges-fig:hover { transform: none; }
+.bridges-fig svg { display: block; width: 100%; height: auto; border-radius: 8px; }
+.bridges-fig figcaption { color: var(--muted); font-size: 0.9rem; margin-top: 12px; text-align: center; }
+
+.bridges .land { fill: #232c3b; }
+.bridges .island { stroke: #3a465a; stroke-width: 2; }
+.bridges .water { fill: rgba(88, 166, 255, 0.22); stroke: rgba(88, 166, 255, 0.55); stroke-width: 2; stroke-linejoin: round; }
+.bridges .bridge line { stroke: #d29922; stroke-width: 9; stroke-linecap: round; }
+.bridges .region text { fill: var(--text); font-size: 26px; font-weight: 700; text-anchor: middle; }
+
+.bridges .edge path { fill: none; stroke: #d29922; stroke-width: 4; stroke-linecap: round; }
+.bridges .vertex circle { fill: var(--accent-2); stroke: var(--bg); stroke-width: 3; }
+.bridges .vertex text { fill: #0d1117; font-size: 18px; font-weight: 700; text-anchor: middle; }
+.bridges .degree text { fill: var(--muted); font-size: 15px; }
+
+.bridges-text { color: var(--muted); margin-top: 20px; max-width: 760px; }
+.bridges-text strong { color: var(--text); }

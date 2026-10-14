@@ -9,7 +9,8 @@ Site estático (HTML + CSS + JS puro), sem etapa de build — pronto para o GitH
 ```
 index.html           → Página inicial
 participantes.html   → Membros do grupo
-conteudos.html       → Cronograma de tópicos e materiais
+conteudos.html       → Tópicos (Scheinerman) e referências
+reunioes.html        → Registro das reuniões
 assets/css/style.css → Estilos (tema escuro)
 assets/js/main.js    → Animação de grafo na homepage
 ```
@@ -24,6 +25,7 @@ assets/js/main.js    → Animação de grafo na homepage
 ## Editando
 
 - **Participantes:** em `participantes.html`, copie um bloco `<div class="card member">` e altere nome, iniciais, papel e links.
+- **Reuniões:** em `reunioes.html`, copie um bloco `<div class="card topic">` para cada nova reunião.
 - **Conteúdos:** em `conteudos.html`, cada tópico é um `<div class="card topic">`. Use a classe `done` ou `current` na tag de status.
 - **Cores:** ajuste as variáveis no topo de `assets/css/style.css`.
 
