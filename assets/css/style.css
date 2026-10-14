@@ -254,3 +254,56 @@ footer {
   background: var(--accent-2);
 }
 .year-tag { color: var(--accent); font-weight: 700; font-family: ui-monospace, monospace; margin-right: 10px; }
+
+/* ---------- Jogo das pontes ---------- */
+.game-intro { margin: 0 0 20px; }
+.game {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 3fr) minmax(240px, 2fr);
+  align-items: start;
+}
+.game:hover { transform: none; }
+#bridge-game { display: block; width: 100%; height: auto; border-radius: 8px; user-select: none; }
+.game-region { cursor: pointer; transition: fill 0.15s; }
+.game-region:hover, .game-region.is-current { fill: #2b3647; }
+.game-bridge { cursor: pointer; outline: none; }
+.game-bridge.is-used { cursor: not-allowed; }
+.game-bridge.is-available line:first-child { animation: pulse 1.2s ease-in-out infinite; }
+.game-bridge:focus-visible line:first-child { stroke: #ffffff; }
+.game-walker { transition: cx 0.3s ease, cy 0.3s ease; }
+@keyframes pulse { 50% { stroke-width: 13; } }
+
+.game-status {
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  min-height: 3.2em;
+}
+.game-status.ok { border-color: #238636; color: #3fb950; }
+.game-status.warn { border-color: #9e6a03; color: #d29922; }
+.game-block { margin-top: 18px; }
+.game-block h3 { font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
+.game-path { font-family: ui-monospace, monospace; word-break: break-word; }
+.game-degrees .deg {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-family: ui-monospace, monospace;
+  font-size: 0.9rem;
+}
+.game-degrees .deg.odd { color: #f85149; border-color: #8e1519; }
+.game-degrees .deg.even { color: #3fb950; border-color: #238636; }
+.game-degrees p { color: var(--muted); font-size: 0.9rem; }
+.game-actions { margin-top: 18px; }
+.game-actions .btn { cursor: pointer; font: inherit; font-weight: 600; }
+
+@media (max-width: 760px) {
+  .game { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .game-bridge.is-available line:first-child { animation: none; }
+}
