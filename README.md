@@ -1,4 +1,4 @@
-# Graph Group
+# Graph Theory Study Group
 
 Site do nosso grupo de estudos sobre **Teoria dos Grafos**.
 
@@ -13,6 +13,7 @@ conteudos.html       → Tópicos (Scheinerman) e referências
 reunioes.html        → Registro das reuniões
 assets/css/style.css → Estilos (tema escuro)
 assets/js/main.js    → Animação de grafo na homepage
+referencias/         → PDFs das referências
 ```
 
 ## Publicando no GitHub Pages

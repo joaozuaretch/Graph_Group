@@ -223,6 +223,7 @@ footer {
 }
 
 /* ---------- Pontes de Königsberg ---------- */
+/* As cores do desenho ficam como atributos no próprio SVG (index.html). */
 .bridges {
   display: grid;
   gap: 20px;
@@ -232,17 +233,6 @@ footer {
 .bridges-fig:hover { transform: none; }
 .bridges-fig svg { display: block; width: 100%; height: auto; border-radius: 8px; }
 .bridges-fig figcaption { color: var(--muted); font-size: 0.9rem; margin-top: 12px; text-align: center; }
-
-.bridges .land { fill: #232c3b; }
-.bridges .island { stroke: #3a465a; stroke-width: 2; }
-.bridges .water { fill: rgba(88, 166, 255, 0.22); stroke: rgba(88, 166, 255, 0.55); stroke-width: 2; stroke-linejoin: round; }
-.bridges .bridge line { stroke: #d29922; stroke-width: 9; stroke-linecap: round; }
-.bridges .region text { fill: var(--text); font-size: 26px; font-weight: 700; text-anchor: middle; }
-
-.bridges .edge path { fill: none; stroke: #d29922; stroke-width: 4; stroke-linecap: round; }
-.bridges .vertex circle { fill: var(--accent-2); stroke: var(--bg); stroke-width: 3; }
-.bridges .vertex text { fill: #0d1117; font-size: 18px; font-weight: 700; text-anchor: middle; }
-.bridges .degree text { fill: var(--muted); font-size: 15px; }
 
 .bridges-text { color: var(--muted); margin-top: 20px; max-width: 760px; }
 .bridges-text strong { color: var(--text); }
