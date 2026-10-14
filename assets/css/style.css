@@ -236,3 +236,21 @@ footer {
 
 .bridges-text { color: var(--muted); margin-top: 20px; max-width: 760px; }
 .bridges-text strong { color: var(--text); }
+
+/* ---------- História ---------- */
+.history { max-width: 760px; color: var(--muted); }
+.history p { margin-bottom: 16px; }
+.history strong { color: var(--text); }
+.timeline { list-style: none; margin: 24px 0 0; border-left: 2px solid var(--border); padding-left: 20px; }
+.timeline li { position: relative; margin-bottom: 14px; }
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -27px;
+  top: 7px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent-2);
+}
+.year-tag { color: var(--accent); font-weight: 700; font-family: ui-monospace, monospace; margin-right: 10px; }

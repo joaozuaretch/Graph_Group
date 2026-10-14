@@ -6,7 +6,7 @@
   <title>Graph Theory Study Group · Grupo de Estudos de Grafos</title>
   <meta name="description" content="Grupo de estudos sobre Teoria dos Grafos.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><line x1='8' y1='8' x2='24' y2='10' stroke='%2358a6ff' stroke-width='2'/><line x1='8' y1='8' x2='14' y2='24' stroke='%2358a6ff' stroke-width='2'/><line x1='24' y1='10' x2='14' y2='24' stroke='%2358a6ff' stroke-width='2'/><circle cx='8' cy='8' r='4' fill='%23a371f7'/><circle cx='24' cy='10' r='4' fill='%23a371f7'/><circle cx='14' cy='24' r='4' fill='%23a371f7'/></svg>">
-  <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <link rel="stylesheet" href="assets/css/style.css?v=3">
 </head>
 <body>
   <header>
@@ -48,6 +48,31 @@
         </div>
       </section>
 
+      <h2 class="section-title">Um pouco de história</h2>
+      <div class="history">
+        <p>
+          No século XVIII, Königsberg era uma próspera cidade da Prússia, cortada pelo rio Pregel.
+          No meio do rio havia duas ilhas, ligadas entre si e às margens por sete pontes. Conta-se
+          que os moradores, em seus passeios de domingo, tentavam descobrir se era possível
+          atravessar a cidade passando por <strong>todas as pontes exatamente uma vez</strong>,
+          sem nunca conseguir.
+        </p>
+        <p>
+          O problema chegou a Leonhard Euler, então na Academia de Ciências de São Petersburgo.
+          Euler percebeu que as distâncias e o formato das ruas não importavam: só interessava
+          <strong>quais regiões estavam ligadas por quais pontes</strong>. Em 1736 ele apresentou a
+          solução no artigo <em>Solutio problematis ad geometriam situs pertinentis</em>, mostrando
+          que tal passeio é impossível. Essa ideia de reduzir um problema às suas conexões é o
+          ponto de partida da Teoria dos Grafos.
+        </p>
+        <ol class="timeline">
+          <li><span class="year-tag">1736</span>Euler resolve o problema das pontes de Königsberg.</li>
+          <li><span class="year-tag">1873</span>Publicado o trabalho de Carl Hierholzer, que prova que a condição de Euler também é suficiente.</li>
+          <li><span class="year-tag">1878</span>J. J. Sylvester usa pela primeira vez a palavra <em>graph</em> nesse sentido.</li>
+          <li><span class="year-tag">1936</span>Dénes Kőnig publica o primeiro livro dedicado à Teoria dos Grafos.</li>
+        </ol>
+      </div>
+
       <h2 class="section-title">As sete pontes de Königsberg</h2>
       <div class="bridges">
         <figure class="card bridges-fig">
@@ -72,7 +97,7 @@
               <text x="470" y="168">D</text>
             </g>
           </svg>
-          <figcaption>A cidade era cortada pelo rio Pregel, com duas ilhas ligadas às margens por sete pontes.</figcaption>
+          <figcaption>As quatro regiões da cidade (A, B, C, D) e as sete pontes.</figcaption>
         </figure>
 
         <figure class="card bridges-fig">
@@ -107,7 +132,7 @@
         É possível passear pela cidade cruzando <strong>cada ponte exatamente uma vez</strong>?
         Euler mostrou que não: um passeio assim só existe se no máximo dois vértices tiverem
         grau ímpar, e aqui os quatro têm. Esse argumento é considerado o nascimento da
-        Teoria dos Grafos. (Königsberg é a atual Kaliningrado, na Rússia.)
+        Teoria dos Grafos. Hoje, Königsberg se chama Kaliningrado e pertence à Rússia.
       </p>
     </div>
   </main>
@@ -118,6 +143,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/main.js?v=3"></script>
 </body>
 </html>
