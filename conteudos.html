@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conteúdos · Graph Theory Study Group</title>
+  <meta name="description" content="Grupo de estudos sobre Teoria dos Grafos.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><line x1='8' y1='8' x2='24' y2='10' stroke='%2358a6ff' stroke-width='2'/><line x1='8' y1='8' x2='14' y2='24' stroke='%2358a6ff' stroke-width='2'/><line x1='24' y1='10' x2='14' y2='24' stroke='%2358a6ff' stroke-width='2'/><circle cx='8' cy='8' r='4' fill='%23a371f7'/><circle cx='24' cy='10' r='4' fill='%23a371f7'/><circle cx='14' cy='24' r='4' fill='%23a371f7'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <line x1="8" y1="8" x2="24" y2="10" stroke="#58a6ff" stroke-width="2"/>
+          <line x1="8" y1="8" x2="14" y2="24" stroke="#58a6ff" stroke-width="2"/>
+          <line x1="24" y1="10" x2="14" y2="24" stroke="#58a6ff" stroke-width="2"/>
+          <circle cx="8" cy="8" r="4" fill="#a371f7"/>
+          <circle cx="24" cy="10" r="4" fill="#a371f7"/>
+          <circle cx="14" cy="24" r="4" fill="#a371f7"/>
+        </svg>
+        Graph Theory Study Group
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="participantes.html">Participantes</a></li>
+          <li><a href="conteudos.html" class="active">Conteúdos</a></li>
+          <li><a href="reunioes.html">Reuniões</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="page-title">Conteúdos</h1>
+      <p class="page-subtitle">Os tópicos que estamos estudando, seguindo a parte de Grafos do livro do Scheinerman.</p>
+
+      <!-- Status: use a classe "done" (concluído), "current" (em andamento) ou nenhuma (planejado). -->
+      <div class="grid">
+        <div class="card topic">
+          <div class="meta"><span class="num">§47</span><span class="tag done">Concluído</span></div>
+          <h3>Fundamentos da Teoria dos Grafos</h3>
+          <p>Motivação e primeiras definições.</p>
+          <ul>
+            <li>Coloração de mapas, três utilidades e as sete pontes</li>
+            <li>O que é um grafo</li>
+            <li>Adjacência e grau</li>
+          </ul>
+        </div>
+
+        <div class="card topic">
+          <div class="meta"><span class="num">§48</span><span class="tag done">Concluído</span></div>
+          <h3>Subgrafos</h3>
+          <p>Partes de um grafo e suas relações.</p>
+          <ul>
+            <li>Subgrafos induzidos e geradores</li>
+            <li>Cliques e conjuntos independentes</li>
+            <li>Complementos</li>
+          </ul>
+        </div>
+
+        <div class="card topic">
+          <div class="meta"><span class="num">§49</span><span class="tag done">Concluído</span></div>
+          <h3>Conexão</h3>
+          <p>Como os vértices se ligam.</p>
+          <ul>
+            <li>Passeios</li>
+            <li>Caminhos</li>
+            <li>Desconexão</li>
+          </ul>
+        </div>
+
+        <div class="card topic">
+          <div class="meta"><span class="num">§50</span><span class="tag done">Concluído</span></div>
+          <h3>Árvores</h3>
+          <p>Grafos conexos sem ciclos.</p>
+          <ul>
+            <li>Ciclos, florestas e árvores</li>
+            <li>Propriedades das árvores e folhas</li>
+            <li>Árvores geradoras</li>
+          </ul>
+        </div>
+
+        <div class="card topic">
+          <div class="meta"><span class="num">§51</span><span class="tag">Planejado</span></div>
+          <h3>Grafos Eulerianos</h3>
+          <p>De volta às pontes de Königsberg.</p>
+          <ul>
+            <li>Condições necessárias</li>
+            <li>Teoremas principais</li>
+          </ul>
+        </div>
+
+        <div class="card topic">
+          <div class="meta"><span class="num">§52</span><span class="tag">Planejado</span></div>
+          <h3>Coloração</h3>
+          <p>Atribuindo cores aos vértices.</p>
+          <ul>
+            <li>Conceitos básicos</li>
+            <li>Grafos bipartidos</li>
+            <li>2-coloração vs. 3-coloração</li>
+          </ul>
+        </div>
+
+        <div class="card topic">
+          <div class="meta"><span class="num">§53</span><span class="tag">Planejado</span></div>
+          <h3>Grafos Planares</h3>
+          <p>Desenhando grafos sem cruzamentos.</p>
+          <ul>
+            <li>Imersões no plano</li>
+            <li>Fórmula de Euler</li>
+            <li>Coloração de grafos planares</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="section-title">Materiais de referência</h2>
+      <ul class="resources">
+        <li>
+          <a href="referencias/scheinerman-mathematics-a-discrete-introduction.pdf" target="_blank" rel="noopener"><strong>Mathematics: A Discrete Introduction</strong></a> (3ª ed.) — Edward R. Scheinerman<br>
+          <span>Thomson Brooks/Cole, 2006. Livro-base do grupo: parte de Grafos, seções 47 a 53.</span>
+        </li>
+        <li>
+          <a href="referencias/diestel-graph-theory.pdf" target="_blank" rel="noopener"><strong>Graph Theory</strong></a> (2ª ed.) — Reinhard Diestel<br>
+          <span>Springer, Graduate Texts in Mathematics, vol. 173, 2000. Referência para aprofundamento.</span>
+        </li>
+        <li>
+          <a href="referencias/grafos-infinitos-icmc-2026.pdf" target="_blank" rel="noopener"><strong>Uma breve introdução aos grafos infinitos</strong></a> — Paulo Sérgio Farias Magalhães Júnior (UFPI)<br>
+          <span>Notas do minicurso do Curso de Verão ICMC 2026.</span>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span class="year"></span> Graph Theory Study Group · Grupo de estudos de Teoria dos Grafos
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=2"></script>
+</body>
+</html>

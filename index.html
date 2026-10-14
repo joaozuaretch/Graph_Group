@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graph Theory Study Group · Grupo de Estudos de Grafos</title>
+  <meta name="description" content="Grupo de estudos sobre Teoria dos Grafos.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><line x1='8' y1='8' x2='24' y2='10' stroke='%2358a6ff' stroke-width='2'/><line x1='8' y1='8' x2='14' y2='24' stroke='%2358a6ff' stroke-width='2'/><line x1='24' y1='10' x2='14' y2='24' stroke='%2358a6ff' stroke-width='2'/><circle cx='8' cy='8' r='4' fill='%23a371f7'/><circle cx='24' cy='10' r='4' fill='%23a371f7'/><circle cx='14' cy='24' r='4' fill='%23a371f7'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <line x1="8" y1="8" x2="24" y2="10" stroke="#58a6ff" stroke-width="2"/>
+          <line x1="8" y1="8" x2="14" y2="24" stroke="#58a6ff" stroke-width="2"/>
+          <line x1="24" y1="10" x2="14" y2="24" stroke="#58a6ff" stroke-width="2"/>
+          <circle cx="8" cy="8" r="4" fill="#a371f7"/>
+          <circle cx="24" cy="10" r="4" fill="#a371f7"/>
+          <circle cx="14" cy="24" r="4" fill="#a371f7"/>
+        </svg>
+        Graph Theory Study Group
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Início</a></li>
+          <li><a href="participantes.html">Participantes</a></li>
+          <li><a href="conteudos.html">Conteúdos</a></li>
+          <li><a href="reunioes.html">Reuniões</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <canvas id="graph-canvas" aria-hidden="true"></canvas>
+        <div class="hero-content">
+          <h1>Estudando <span class="gradient-text">Teoria dos Grafos</span> juntos</h1>
+          <p>
+            Somos um grupo de amigos que se reúne para estudar grafos: dos conceitos
+            básicos aos algoritmos clássicos, sempre com muita prática e discussão.
+          </p>
+          <a href="conteudos.html" class="btn btn-primary">Ver conteúdos</a>
+          <a href="participantes.html" class="btn">Conheça o grupo</a>
+        </div>
+      </section>
+
+      <h2 class="section-title">As sete pontes de Königsberg</h2>
+      <div class="bridges">
+        <figure class="card bridges-fig">
+          <svg viewBox="0 0 520 320" role="img" aria-labelledby="map-title">
+            <title id="map-title">Mapa esquemático de Königsberg: o rio Pregel, duas ilhas e sete pontes</title>
+            <rect width="520" height="320" fill="#232c3b"/>
+            <polygon fill="#1f3550" stroke="#3f6ea3" stroke-width="2" stroke-linejoin="round" points="0,100 300,100 520,50 520,100 340,150 340,170 520,220 520,270 300,220 0,220"/>
+            <ellipse cx="160" cy="160" rx="85" ry="32" fill="#232c3b" stroke="#3a465a" stroke-width="2"/>
+            <g stroke="#d29922" stroke-width="9" stroke-linecap="round">
+              <line x1="110" y1="94" x2="110" y2="140"/>
+              <line x1="210" y1="94" x2="210" y2="140"/>
+              <line x1="110" y1="180" x2="110" y2="226"/>
+              <line x1="210" y1="180" x2="210" y2="226"/>
+              <line x1="240" y1="160" x2="346" y2="160"/>
+              <line x1="430" y1="62" x2="430" y2="134"/>
+              <line x1="430" y1="186" x2="430" y2="258"/>
+            </g>
+            <g fill="#e6edf3" font-size="26" font-weight="700" text-anchor="middle" font-family="system-ui, sans-serif">
+              <text x="40" y="58">A</text>
+              <text x="40" y="282">B</text>
+              <text x="160" y="168">C</text>
+              <text x="470" y="168">D</text>
+            </g>
+          </svg>
+          <figcaption>A cidade era cortada pelo rio Pregel, com duas ilhas ligadas às margens por sete pontes.</figcaption>
+        </figure>
+
+        <figure class="card bridges-fig">
+          <svg viewBox="0 0 520 320" role="img" aria-labelledby="graph-title">
+            <title id="graph-title">O grafo de Euler: quatro vértices A, B, C, D e sete arestas</title>
+            <g fill="none" stroke="#d29922" stroke-width="4" stroke-linecap="round">
+              <path d="M260 50 Q170 80 150 160"/>
+              <path d="M260 50 Q240 130 150 160"/>
+              <path d="M260 270 Q170 240 150 160"/>
+              <path d="M260 270 Q240 190 150 160"/>
+              <path d="M150 160 L400 160"/>
+              <path d="M260 50 L400 160"/>
+              <path d="M260 270 L400 160"/>
+            </g>
+            <g font-size="18" font-weight="700" text-anchor="middle" font-family="system-ui, sans-serif">
+              <circle cx="260" cy="50" r="18" fill="#a371f7" stroke="#0d1117" stroke-width="3"/><text fill="#0d1117" x="260" y="56">A</text>
+              <circle cx="260" cy="270" r="18" fill="#a371f7" stroke="#0d1117" stroke-width="3"/><text fill="#0d1117" x="260" y="276">B</text>
+              <circle cx="150" cy="160" r="18" fill="#a371f7" stroke="#0d1117" stroke-width="3"/><text fill="#0d1117" x="150" y="166">C</text>
+              <circle cx="400" cy="160" r="18" fill="#a371f7" stroke="#0d1117" stroke-width="3"/><text fill="#0d1117" x="400" y="166">D</text>
+            </g>
+            <g fill="#8b949e" font-size="15" font-family="system-ui, sans-serif">
+              <text x="290" y="40">grau 3</text>
+              <text x="290" y="296">grau 3</text>
+              <text x="70" y="150">grau 5</text>
+              <text x="428" y="150">grau 3</text>
+            </g>
+          </svg>
+          <figcaption>Euler (1736) trocou cada região por um vértice e cada ponte por uma aresta.</figcaption>
+        </figure>
+      </div>
+      <p class="bridges-text">
+        É possível passear pela cidade cruzando <strong>cada ponte exatamente uma vez</strong>?
+        Euler mostrou que não: um passeio assim só existe se no máximo dois vértices tiverem
+        grau ímpar, e aqui os quatro têm. Esse argumento é considerado o nascimento da
+        Teoria dos Grafos. (Königsberg é a atual Kaliningrado, na Rússia.)
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span class="year"></span> Graph Theory Study Group · Grupo de estudos de Teoria dos Grafos
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=2"></script>
+</body>
+</html>
